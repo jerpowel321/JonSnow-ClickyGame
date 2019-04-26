@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import ImageCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Nav from '../src/components/Nav';
 import Jumbotron from '../src/components/Jumbotron';
@@ -14,7 +14,33 @@ class App extends Component {
     message: "Click on any image to begin!",
     score: 0,
     topScore: 0,
+    oldTopScore: 0,
     guesses: []
+  };
+
+  selectCard = id => {
+    let message = this.state.message;
+    let score = this.state.score;
+    let topScore = this.state.topScore;
+    let JonSnow = this.state.friends.filter(image => image.id === id)[0];
+
+    if (JonSnow.selected === false) {
+      //preparing for different scorings
+      message = "";
+      score += 1;
+
+      if (topScore < score) {
+        topScore = score;
+      }
+
+      JonSnow.selected = true;
+
+      this.setState({ score, topScore, message, friends: this.shuffle(this.state.friends) });
+
+    } else {
+      this.endGame();
+
+    }
   };
   handleCardClick = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -39,14 +65,25 @@ class App extends Component {
         />
         <Jumbotron />
       <Wrapper>
-        {this.state.friends.map(friend => (
+        {/* {this.state.friends.map(friend => (
           <FriendCard 
             id={friend.id}
             key={friend.id}
             image={friend.image}
             onClick={this.handleCardClick}
           />
-        ))}
+        ))} */}
+        <div className="row mx-5">
+              {this.state.friends.map((JonSnow, index) => (
+                <ImageCard
+                  key={index}
+                  selectCard={this.selectCard}
+                  index={index}
+                  id={JonSnow.id}
+                  image={JonSnow.image}
+                />
+              ))}
+            </div>
       </Wrapper>
       <Footer />
       </div>
