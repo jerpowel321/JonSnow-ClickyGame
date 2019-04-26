@@ -15,7 +15,6 @@ class App extends Component {
     score: 0,
     topScore: 0,
     oldTopScore: 0,
-    guesses: []
   };
 
   selectCard = id => {
