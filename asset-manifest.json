@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JonSnow-ClickyGame/static/css/main.ff68c209.chunk.css",
+    "main.js": "/JonSnow-ClickyGame/static/js/main.2b745d6f.chunk.js",
+    "main.js.map": "/JonSnow-ClickyGame/static/js/main.2b745d6f.chunk.js.map",
+    "runtime~main.js": "/JonSnow-ClickyGame/static/js/runtime~main.899b3228.js",
+    "runtime~main.js.map": "/JonSnow-ClickyGame/static/js/runtime~main.899b3228.js.map",
+    "static/js/2.6efc73d3.chunk.js": "/JonSnow-ClickyGame/static/js/2.6efc73d3.chunk.js",
+    "static/js/2.6efc73d3.chunk.js.map": "/JonSnow-ClickyGame/static/js/2.6efc73d3.chunk.js.map",
+    "index.html": "/JonSnow-ClickyGame/index.html",
+    "precache-manifest.63eec765ee63246b5e55f27ad7ee9e87.js": "/JonSnow-ClickyGame/precache-manifest.63eec765ee63246b5e55f27ad7ee9e87.js",
+    "service-worker.js": "/JonSnow-ClickyGame/service-worker.js",
+    "static/css/main.ff68c209.chunk.css.map": "/JonSnow-ClickyGame/static/css/main.ff68c209.chunk.css.map"
+  }
+}
