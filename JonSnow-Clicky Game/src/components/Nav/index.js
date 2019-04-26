@@ -1,23 +1,20 @@
 import React from "react";
 import "./style.css";
 
-function Nav() {
+function Nav(props) {
     return (
-        <nav class="navbar fixed-top navbar-expand-lg pt-2 pb-2">
-            <h1 class= "text-white">Clicky Game</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav className="navbar fixed-top navbar-expand-lg pt-2 pb-2">
+            <h1 className= "text-white">Clicky Game</h1>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
                     <li>
-                        <div class= "text-white">Click an Image to Begin!</div>
+                        <div className= "text-white">{props.message}</div>
                     </li>
                     <li>
-                        <div class= "text-white mr-2">Score |</div>
-                    </li>
-                    <li>
-                        <div class= "text-white">Top Score</div>
+                        <div className= "text-white mr-2">Score: {props.score} | Best Score: {props.topScore}</div>
                     </li>
                 </ul>
             </div>
