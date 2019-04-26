@@ -1,4 +1,8 @@
 .navbar {
-    background-color: rgb(94, 4, 168);
+    background-color: black;
 
   }
+
+li div {
+  font-size: 30px;
+}

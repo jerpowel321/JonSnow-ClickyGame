@@ -3,7 +3,7 @@ import "./style.css";
 
 function Nav() {
     return (
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg pt-2 pb-2">
             <h1 class= "text-white">Clicky Game</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@ function Nav() {
                         <div class= "text-white">Click an Image to Begin!</div>
                     </li>
                     <li>
-                        <div class= "text-white">Score</div>
+                        <div class= "text-white mr-2">Score |</div>
                     </li>
                     <li>
                         <div class= "text-white">Top Score</div>

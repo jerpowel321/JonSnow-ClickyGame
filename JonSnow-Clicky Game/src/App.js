@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Nav from '../src/components/Nav';
+import Jumbotron from '../src/components/Jumbotron';
 import friends from "./friends.json";
 import './App.css';
 
@@ -17,8 +18,8 @@ class App extends Component {
     return (
       <div>
         <Nav />
+        <Jumbotron />
       <Wrapper>
-          <h1>Lets Start the Game!</h1>
         {this.state.friends.map(friend => (
           <FriendCard
             id={friend.id}
