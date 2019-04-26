@@ -4,6 +4,7 @@ import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Nav from '../src/components/Nav';
 import Jumbotron from '../src/components/Jumbotron';
+import Footer from '../src/components/Footer';
 import friends from "./friends.json";
 import './App.css';
 
@@ -28,6 +29,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      <Footer />
       </div>
     );
   }
