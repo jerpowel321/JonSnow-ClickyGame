@@ -32,9 +32,7 @@ class App extends Component {
       if (topScore < score) {
         topScore = score;
       }
-
       JonSnow.selected = true;
-
       this.setState({ score, topScore, message, friends: this.shuffle(this.state.friends) });
 
     } else {
@@ -42,18 +40,38 @@ class App extends Component {
 
     }
   };
-  handleCardClick = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-    console.log("this has been clicked")
-    // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-    alert(`Hello ${this.state.friends.id}`);
-    // this.setState({
-    //   firstName: "",
-    //   lastName: ""
-    // });
-  };
-  
+
+  endGame = () => {
+    let topScore = this.state.topScore;
+    let oldTopScore = this.state.oldTopScore;
+    let score = this.state.score;
+    let message = this.state.message;
+
+    if (oldTopScore < topScore) {
+      oldTopScore = topScore;
+      message = `Hooray, your new Top Score is ${topScore}!`
+    } else {
+      message = "Oh no, that wasn't right. Try agin."
+    }
+
+    score = 0;
+    this.state.friends.map((JonSnow, index) => {
+      return JonSnow.selected = false;
+
+    })
+
+    this.setState({ score, topScore, oldTopScore, message})
+  }
+
+  shuffle = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+
+  }
+
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
@@ -65,14 +83,6 @@ class App extends Component {
         />
         <Jumbotron />
       <Wrapper>
-        {/* {this.state.friends.map(friend => (
-          <FriendCard 
-            id={friend.id}
-            key={friend.id}
-            image={friend.image}
-            onClick={this.handleCardClick}
-          />
-        ))} */}
         <div className="row mx-5">
               {this.state.friends.map((JonSnow, index) => (
                 <ImageCard

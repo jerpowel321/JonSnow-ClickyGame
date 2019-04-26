@@ -3,5 +3,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom:0;
+    height: 50vh;
+    margin-bottom: 0;
+}
+
+.jumbotron h1 {
+    margin-top: 100px;
+}
+
+.container {
+    opacity: 0.5;
 }
