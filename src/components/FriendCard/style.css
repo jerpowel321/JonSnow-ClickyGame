@@ -7,6 +7,7 @@
     width: 170px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     text-align: left;
+  
   }
   
   .card > .img-container {
@@ -17,6 +18,12 @@
     background-size: cover;
   }
 
-  .img {
+  img {
     object-fit: cover;
+    width: 150px;
+    height: 170px;
+  }
+
+  img:hover { 
+		opacity: 0.5;
   }

@@ -81,6 +81,8 @@ class App extends Component {
           topScore={this.state.topScore}
         />
         <Jumbotron />
+        <h1 className="display-4 align-text-bottom text-center">Clicky Game!</h1>
+                <b><p className="lead align-text-bottom text-center">Click on an image to earn points, but don't click on any image more than once!</p></b>
       <Wrapper>
         <div className="row mx-5">
               {this.state.friends.map((JonSnow, index) => (

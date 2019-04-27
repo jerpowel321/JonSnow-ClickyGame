@@ -31,3 +31,18 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+    padding-top: 10px;
+    background: black;
+    color: #85144b;
+    margin: 0;
+}
+
+ p {
+    font-size: 25px;
+    font-weight: 300;
+    background: black;
+    color: #85144b;
+    margin: 0;
+}
