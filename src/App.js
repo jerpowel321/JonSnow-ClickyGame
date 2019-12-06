@@ -27,12 +27,16 @@ class App extends Component {
       //preparing for different scorings
       message = "";
       score += 1;
-
       if (topScore < score) {
         topScore = score;
       }
       JonSnow.selected = true;
-      this.setState({ score, topScore, message, friends: this.shuffle(this.state.friends) });
+      this.setState({ 
+        score, 
+        topScore, 
+        message, 
+        friends: this.shuffle(this.state.friends) 
+      });
 
     } else {
       this.endGame();
@@ -45,11 +49,11 @@ class App extends Component {
     let oldTopScore = this.state.oldTopScore;
     let score = this.state.score;
     let message = this.state.message;
-
     if (oldTopScore < topScore) {
       oldTopScore = topScore;
-      message = `Hooray, your new Top Score is ${topScore}!`
-    } else {
+      message = `Awesome, your new Top Score is ${topScore}!`
+    } 
+    else {
       message = "Oh no, that wasn't right. Try agin."
     }
 
