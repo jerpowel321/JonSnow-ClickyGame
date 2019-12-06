@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/JonSnow-ClickyGame/static/css/main.dfda5dad.chunk.css",
-    "main.js": "/JonSnow-ClickyGame/static/js/main.b1d9a3c5.chunk.js",
-    "main.js.map": "/JonSnow-ClickyGame/static/js/main.b1d9a3c5.chunk.js.map",
+    "main.js": "/JonSnow-ClickyGame/static/js/main.0b05e923.chunk.js",
+    "main.js.map": "/JonSnow-ClickyGame/static/js/main.0b05e923.chunk.js.map",
     "runtime~main.js": "/JonSnow-ClickyGame/static/js/runtime~main.899b3228.js",
     "runtime~main.js.map": "/JonSnow-ClickyGame/static/js/runtime~main.899b3228.js.map",
     "static/js/2.6efc73d3.chunk.js": "/JonSnow-ClickyGame/static/js/2.6efc73d3.chunk.js",
     "static/js/2.6efc73d3.chunk.js.map": "/JonSnow-ClickyGame/static/js/2.6efc73d3.chunk.js.map",
     "index.html": "/JonSnow-ClickyGame/index.html",
-    "precache-manifest.3c5009fc13d57a78385b54bd91f588b4.js": "/JonSnow-ClickyGame/precache-manifest.3c5009fc13d57a78385b54bd91f588b4.js",
+    "precache-manifest.e347377726b8e1ec4177dc515565db46.js": "/JonSnow-ClickyGame/precache-manifest.e347377726b8e1ec4177dc515565db46.js",
     "service-worker.js": "/JonSnow-ClickyGame/service-worker.js",
     "static/css/main.dfda5dad.chunk.css.map": "/JonSnow-ClickyGame/static/css/main.dfda5dad.chunk.css.map"
   }
